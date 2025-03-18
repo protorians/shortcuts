@@ -1,6 +1,6 @@
 {
   "name": "@protorians/shortcuts",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Keyboard shortcuts",
   "type": "module",
   "main": "./build/index.js",
@@ -12,8 +12,8 @@
   "exports": "./build/index.js",
   "keywords": [
     "protorians",
-    "widget",
-    "ui",
+    "keeyboard",
+    "shortcuts",
     "library"
   ],
   "author": "Y. Yannick GOBOU",
