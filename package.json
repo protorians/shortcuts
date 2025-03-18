@@ -1,0 +1,34 @@
+{
+  "name": "@protorians/shortcuts",
+  "version": "0.0.0",
+  "description": "Keyboard shortcuts",
+  "type": "module",
+  "main": "./build/index.js",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "rm -rf build && tsc && ts-add-js-extension --dir=build",
+    "fix:extension": "ts-add-js-extension --dir=build"
+  },
+  "exports": "./build/index.js",
+  "keywords": [
+    "protorians",
+    "widget",
+    "ui",
+    "library"
+  ],
+  "author": "Y. Yannick GOBOU",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/protorians/shortcuts.git",
+    "directory": "source"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.13.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@protorians/core": "^0.1.30"
+  }
+}
