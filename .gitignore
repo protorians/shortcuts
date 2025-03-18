@@ -1,0 +1,9 @@
+node_modules
+.idea/*
+~cjs
+~esm
+build
+.vscode
+*-lock.*
+*.lock
+pnpm-lock.yaml
