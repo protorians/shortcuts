@@ -35,6 +35,8 @@ export interface IShortcut<T extends HTMLElement> {
     unmount(keys: string[]): this;
 
     clear(): this;
+
+    destroy(): void;
 }
 
 export interface IShortcutSignalMap {

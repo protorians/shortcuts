@@ -232,6 +232,25 @@ export class Shortcut<T extends HTMLElement> implements IShortcut<T> {
         return this;
     }
 
+    /**
+     * Destroy method to clean up the instance
+     */
+    destroy(): void {
+        // Remove event listeners
+        this.targets.forEach(target => {
+            target.removeEventListener("keydown", this.down.bind(this));
+            target.removeEventListener("keyup", this.up.bind(this));
+        });
+
+        // Clear all references
+        this._shortcuts = [];
+        this.actives.clear();
+        this.buffer = undefined as any;
+        this.signal = undefined as any;
+        (this as any).targets = undefined;
+        (this as any).enabled = undefined;
+        (this as any).timeout = undefined;
+    }
 }
 
 export function createShortcut<T extends HTMLElement>(
