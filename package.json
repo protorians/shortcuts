@@ -23,12 +23,12 @@
     "directory": "source"
   },
   "license": "ISC",
-  "devDependencies": {
-    "@types/node": "^22.13.1",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.8.2"
+  "peerDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.8.2",
+    "@types/node": "^18.7.13"
   },
   "dependencies": {
-    "@protorians/core": "^0.1.31"
+    "@protorians/core": "workspace:*"
   }
 }
